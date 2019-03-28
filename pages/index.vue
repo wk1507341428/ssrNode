@@ -30,9 +30,8 @@ const axios = require('axios')
 
 export default {
   mounted(){
-    axios.get("/kang1.wang/v1/subscribe/getTeacherIntroduceInfo",{params:{"teaIdStr":1}}).then(res=>{
-      console.log(res)
-    })
+    axios.get("/kang1.wang/v1/subscribe/getTeacherIntroduceInfo")
+    console.log(process.env.NODE_ENV)
   },
   components: {
     Logo

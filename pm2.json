@@ -1,0 +1,16 @@
+[{
+    "name": "ssr+node",
+    "script": "server/index.js",
+    "env_dev": {
+      "NODE_ENV": "development"
+    },
+    "env_test": {
+      "NODE_ENV": "testing"
+    },
+    "env_uat": {
+      "NODE_ENV": "uat"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+}]

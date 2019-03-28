@@ -11,6 +11,7 @@ let config = require('../nuxt.config.js')
 config.dev = !(app.env === 'production')
 
 consola.info("环境变量",app.env)
+consola.info("环境变量",app.env,config.dev,"我又重新编辑了一次")
 
 async function start() {
   // Instantiate nuxt.js

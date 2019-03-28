@@ -3,6 +3,9 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
+  env: {
+    NODE_ENV: process.env.NODE_ENV
+  },
 
   /*
   ** Headers of the page

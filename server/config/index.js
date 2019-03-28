@@ -11,6 +11,8 @@ if (env === 'production') {
   localConfig = require('./config.test')
 }
 
+console.log(env,"<<<<<<<<<<<",localConfig)
+
 const config = Object.assign(configDefault, localConfig)
 
 module.exports = config

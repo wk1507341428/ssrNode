@@ -2,6 +2,8 @@
 
 > My exceptional Nuxt.js project
 
+cnpm i core-js@2.6.5 
+
 ## Build Setup
 
 ``` bash

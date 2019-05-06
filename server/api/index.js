@@ -3,6 +3,8 @@ const Router = require('koa-router')
 const config = require('../config/index')
 
 const router = new Router()
+
+// 接口代理
 config.proxyList.forEach( item => {
     router.all(item.prefix + '/*', createService(item))
 })

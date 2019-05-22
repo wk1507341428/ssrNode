@@ -25,8 +25,8 @@ function createService ({host, prefix}) {
         axiosConfig.data = ctx.request.body
       }
       console.log('proxy ---->', axiosConfig.baseURL, axiosConfig.url)
-      let { data } = await axios(axiosConfig)
-      ctx.body = data
+      // let { data } = await axios(axiosConfig)
+      ctx.body = {code:"0",mes:"请求成功"}
     }
 }
 

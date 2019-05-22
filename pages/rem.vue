@@ -4,8 +4,8 @@
 
 <style lang="scss">
 .box{
-    width: px2rem(400);
-    height: px2rem(400);
+    width: 100px;
+    height: 100px;
     background-color: $color;
 }
 </style>

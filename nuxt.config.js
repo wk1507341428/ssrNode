@@ -21,8 +21,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script:[
-      { innerHTML: require('./plugins/adapter.js'), type: 'text/javascript', charset: 'utf-8'},
-    ]
+      { innerHTML: require('./assets/js/adapter.js'), type: 'text/javascript', charset: 'utf-8'},
+    ],
+    __dangerouslyDisableSanitizers: ['script']
   },
 
   /*
@@ -65,6 +66,12 @@ styleResources: {
   ** Build configuration
   */
   build: {
+    postcss: [
+      require('postcss-px2rem')({
+        remUnit: 75
+      })
+    ],
+
     /*
     ** You can extend webpack config here
     */

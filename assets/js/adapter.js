@@ -1,6 +1,6 @@
 module.exports = `var
-    PAGE_MAX_WIDTH = 640,
-    BASE_FONT_SIZE = 50
+    PAGE_MAX_WIDTH = 750,
+    BASE_FONT_SIZE = 75
 ;
 //在窗口各宽情况时，动态计算出html的font-size
 if(window) {

@@ -8,7 +8,7 @@ const app = new Koa()
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')
-config.dev = app.env === 'development'
+config.dev = ["testing","development"].includes(app.env)
 
 consola.info("环境变量",app.env)
 consola.info("环境变量",app.env,config.dev)

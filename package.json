@@ -22,7 +22,8 @@
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "nuxt": "^2.4.0",
-    "postcss-px2rem": "^0.3.0"
+    "postcss-px2rem": "^0.3.0",
+    "vue-content-loader": "^0.2.1"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^0.1.2",

@@ -7,15 +7,14 @@ if(window) {
   !function(){
     var
         DOC_ROOT_STYLE = document.documentElement.style,
-        docEle = document.documentElement || document.body;
+        docEle = document.documentElement || document.body;  // 获取html元素
 
     window.addEventListener('load', resizeFontSize);
     window.addEventListener('resize', resizeFontSize);
     resizeFontSize();
 
     function resizeFontSize() {
-        var clientWidth = docEle.getBoundingClientRect().width || 0
-
+        var clientWidth = docEle.getBoundingClientRect().width || 0     // 获取html元素的宽度也就是屏幕宽度
         DOC_ROOT_STYLE.fontSize = Math.min(clientWidth / PAGE_MAX_WIDTH * BASE_FONT_SIZE, BASE_FONT_SIZE) + 'px';
     }
 
@@ -28,7 +27,7 @@ if(window) {
         iframe.parentNode.removeChild(iframe);
     };
     
-    // 安卓手机禁止字体放大 加载页面会延迟1s
+    // 安卓手机禁止字体放大 加载页面会延迟1s  这是防止微信调整浏览器自带字体造成页面布局混乱
     if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
       handleFontSize();
     } else {

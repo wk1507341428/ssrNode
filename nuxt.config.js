@@ -35,6 +35,7 @@ module.exports = {
 	** Global CSS
 	*/
 	css: [
+        '@/assets/font/font_1271314_tt6tmlyg79/iconfont.css'
 	],
 
 	/*

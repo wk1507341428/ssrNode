@@ -19,12 +19,12 @@
 
     function resizeFontSize() {
         var clientWidth = docEle.getBoundingClientRect().width || 0     // 获取html元素的宽度也就是屏幕宽度
-        // 这里通过手机屏幕和设计图的比例 * BASE_FONT_SIZE(根元素)  作为html的font-size   之后书写代码的时候你在量取设计图大小的时候获取到的大小 / BASE_FONT_SIZE   即可还原设计图大小
+        // 这里通过手机屏幕和设计图的比例 * BASE_FONT_SIZE(根元素)  作为html的font-size   之后书写代码的时候你在量取设计图大小的时候获取到的大小 / DOC_ROOT_STYLE.fontSize   即可还原设计图大小
         DOC_ROOT_STYLE.fontSize = Math.min(clientWidth / PAGE_MAX_WIDTH * BASE_FONT_SIZE, BASE_FONT_SIZE) + 'px';
     }
 
 ```
-
+备注：rem有可能造成`精度缺失`
 
 
 ---

@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import skeleton from '~/components/skeleton/skeleton'
 const axios = require('axios')
 
@@ -34,7 +33,6 @@ export default {
         }
     },
 	components: {
-		Logo,
 		skeleton
 	}
 }

@@ -1,6 +1,9 @@
 <template>
 	<div class="container">
-		<div @click="jump" class="iconfont icon-copyright" v-if="show">我是首页,环境变量=>{{env}}</div>
+		<div @click="jump" v-if="show">
+            <div>我是首页,环境变量=>{{env}} <i class="iconfont icon-copyright"></i> </div> 
+            <div>{{ '我是过滤器' | test_filter }}</div> 
+        </div>
 		<skeleton v-else></skeleton>
 	</div>
 </template>
@@ -41,6 +44,6 @@ export default {
 <style lang="scss" scoped>
 .container{
 	text-align: center;
-	font-size: 37PX;
+	font-size: 16PX;
 }
 </style>

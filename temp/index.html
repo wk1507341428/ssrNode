@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        (function () {
+            var ns = document.createElement('script');ns.type = 'text/javascript';ns.async = true;
+            ns.src = 'https://163h5.nos-jd.163yun.com/h5/libs/analyze.js';
+            var f = document.getElementsByTagName('script')[0];f.parentNode.insertBefore(ns,f);
+        })()
+    </script>
+    <style>
+        #btn{
+            cursor: pointer;
+            background-color: #ccc;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">按钮</button>
+</body>
+</html>
+
+<script>
+    var btn = document.getElementById("btn")
+    btn.addEventListener("click",function(){
+        _nfe.report({convert_id : '2832' ,convert_method : '1' ,convert_type : '4'})
+        alert("我被点击了")
+    })
+</script>

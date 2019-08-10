@@ -1,6 +1,8 @@
 <template>
   <div>
-    <nuxt />
+    <transition name="fade">
+        <nuxt />
+    </transition>
   </div>
 </template>
 
@@ -52,4 +54,12 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: transform .4s
+  }
+
+  .fade-enter, .fade-leave-active {
+    transform: translateX(100%);
+  }
 </style>

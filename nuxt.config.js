@@ -42,6 +42,7 @@ module.exports = {
 	** Plugins to load before mounting the App
 	*/
 	plugins: [
+        './plugins/main.js'
 	],
 
 	/*
@@ -50,7 +51,7 @@ module.exports = {
 	modules: [
 		// Doc: https://github.com/nuxt-community/axios-module#usage
 		'@nuxtjs/axios',
-		'@nuxtjs/style-resources'
+        '@nuxtjs/style-resources'
 	],
 	// 为全局提供scss变量
 	styleResources: {

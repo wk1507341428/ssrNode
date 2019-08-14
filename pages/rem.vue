@@ -6,15 +6,11 @@
 </template>
 
 <script>
-import lessonformless from 'lesson-form'
 export default {
     data(){
         return{
 
         }
-    },
-    components:{
-        lessonformless
     }
 }
 </script>

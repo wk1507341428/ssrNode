@@ -10,24 +10,22 @@
 
 <script>
 import skeleton from '~/components/skeleton/skeleton'
-const axios = require('axios')
+import * as ajax from './api/index'
 
 export default {
 	data(){
 		return{
-            show: false,
+            show: true,
             env: null
 		}
 	},
-	mounted() {
-
-		axios.get('/kang1.wang/v1/subscribe/getTeacherIntroduceInfo')
-		console.log(process.env.NODE_ENV)
-
+	async mounted() {
+        try{
+            let result = await ajax.test({a:1})
+        }catch(err){
+            console.log(err.message)
+        }
         this.env = process.env.NODE_ENV
-		setTimeout(()=>{
-			this.show = true
-		},1000)
 
     },
     methods:{

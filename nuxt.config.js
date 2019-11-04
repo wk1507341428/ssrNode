@@ -70,11 +70,11 @@ module.exports = {
 	build: {
 		//  see https://zh.nuxtjs.org/faq/postcss-plugins/
 		postcss: {
-			// plugins: {
-			// 	'postcss-px2rem': {
-			// 		remUnit: 75
-			// 	}
-			// }
+			plugins: {
+				'postcss-px2rem': {
+					remUnit: 75
+				}
+			}
 		},
 
 		/*

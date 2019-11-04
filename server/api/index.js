@@ -20,13 +20,15 @@ function createService ({host, prefix}) {
         params: ctx.query,
         withCredentials: true
       }
+
       const method = ctx.method.toLowerCase()
       if(method === 'post' || method === 'put' || method === 'patch') {
         axiosConfig.data = ctx.request.body
       }
-      console.log('proxy ---->',process.env.NODE_ENV, axiosConfig.baseURL, axiosConfig.url)
-      // let { data } = await axios(axiosConfig)
-      ctx.body = {code:"0",mes:"请求成功"}
+
+      await new Promise(resolve => setTimeout(resolve, 500))
+
+      ctx.body = {code:"0", data: Object.assign(axiosConfig.params,axiosConfig.data), message:"请求成功" }
     }
 }
 
